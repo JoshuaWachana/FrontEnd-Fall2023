@@ -16,7 +16,8 @@ const changeBackgroundColor = () => {
     let r = getRandomNumber();
     let g = getRandomNumber();
     let b = getRandomNumber();
-    body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    let a = 0.1;
+    body.style.backgroundColor = `rgb(${r}, ${g}, ${b}, ${a})`;
   }
 };
 
