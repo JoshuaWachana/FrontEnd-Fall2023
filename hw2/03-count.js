@@ -11,7 +11,7 @@ const wordsArray = paragraphText
   .split(' ');
 
 const handleKeyUp = () => {
-  inputWord = input.value;
+  let inputWord = input.value;
   const matchesInWordsArray = wordsArray.map((word) => {
     if (word.toLowerCase() === inputWord.toLowerCase()) {
       return `<span class="match">${word}</span>`;
