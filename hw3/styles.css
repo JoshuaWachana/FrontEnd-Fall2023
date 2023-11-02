@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 :root {
   --black: #020202;
   --white: #ffffff;
@@ -7,13 +12,51 @@
 
 body {
   background-color: var(--cyan);
+  margin: 0;
+  height: 100vh;
 }
 
 h1 {
   text-align: center;
 }
 
-.donut-chart {
-  border-radius: 0.8rem;
-  background-color: var(--white);
+/* Code for ex01 */
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.figure {
+  height: 300px;
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+}
+
+.figure:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.figcaption {
+  text-align: center;
+  height: 100px;
+}
+
+.characterIMG {
+  display: block;
+  height: 140px;
+  width: 140px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
