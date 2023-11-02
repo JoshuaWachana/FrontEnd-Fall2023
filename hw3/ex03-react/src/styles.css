@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --black: #020202;
+  --white: #ffffff;
+  --blue: #00425c;
+  --cyan: #17a2b8;
+}
+
+body {
+  background-color: var(--cyan);
+  margin: 0;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Code for search */
+
+.search-form {
+  background-color: var(--white);
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.search-form label {
+  font-size: 2rem;
+}
+
+.search-box {
+  font-size: 2rem;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+  background-color: var(--white);
+}
+
+.figure {
+  height: 300px;
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+}
+
+.figure:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.figcaption {
+  text-align: center;
+  height: 100px;
+}
+
+.characterIMG {
+  display: block;
+  height: 140px;
+  width: 140px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* code for chart */
+.chart-container {
+  background-color: var(--white);
+  margin: auto;
+  width: 400px;
+}
