@@ -126,7 +126,13 @@ const getData = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
     calculateHouseMembers(data);
-  } catch (error) {}
+  } catch (error) {
+    const errorElement = document.createElement('p');
+    errorElement.textContent = `Sorry an error occurred: ${error}`;
+    errorElement.style.backgroundColor = 'white';
+    const chartContainer = document.querySelector('.chart-container');
+    chartContainer.append(errorElement);
+  }
 };
 
 getData(url);
