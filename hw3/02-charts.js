@@ -34,10 +34,6 @@ const renderChart = (houseData) => {
   const donutChart = document.querySelector('.donut-chart');
   const chartLegend = document.querySelector('.chart-legend');
 
-  // const donutChart = document.getElementById('chart-1').getContext('2d');
-
-  console.log(houseData);
-
   let listOfHouses = [];
   let numberOfMembersList = [];
 
