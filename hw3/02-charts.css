@@ -1,13 +1,48 @@
-body {
-  background-color: var(--cyan);
-}
-
-h1 {
-  text-align: center;
+main {
+  padding-bottom: 10px;
 }
 
 .donut-chart {
   padding: 2rem;
   border-radius: 0.8rem;
-  background-color: var(--white);
+  background-color: white;
+  margin: auto;
+}
+
+.chart-container {
+  width: 50vw;
+  height: 70vh;
+  margin: auto;
+  background-color: blue;
+}
+
+.chart-legend {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  gap: 10px;
+}
+
+.key-container {
+  display: flex;
+  width: 100px;
+}
+
+.key {
+  width: 80%;
+}
+
+.key-color-box {
+  width: 20%;
+}
+
+@media (max-width: 600px) {
+  .chart-container {
+    width: 100%;
+    height: 50vh;
+  }
 }
