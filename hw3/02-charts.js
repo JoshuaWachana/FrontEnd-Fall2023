@@ -41,11 +41,21 @@ const renderChart = (houseData) => {
 
   for (house in houseData) {
     listOfHouses.push(house);
+    const keyContainer = document.createElement('div');
+    keyContainer.className = 'key-container';
+
+    const keyColorBox = document.createElement('div');
+    keyColorBox.className = 'key-color-box';
+    keyColorBox.style.backgroundColor = backgroundColors[indexColor++];
+
     const key = document.createElement('div');
-    key.innerHTML = `<div class="key-container"><div class="key-color-box" style="background-color: ${backgroundColors[indexColor]}"></div><div class="key">${house}</div></div>`;
-    chartLegend.append(key);
+    key.className = 'key';
+    key.textContent = house;
+
+    keyContainer.append(keyColorBox, key);
+    chartLegend.append(keyContainer);
+
     numberOfMembersList.push(houseData[house]);
-    indexColor += 1;
   }
 
   new Chart(donutChart, {
